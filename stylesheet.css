@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -33,18 +37,115 @@ header {
     max-width: 50%;
 }
 
-nav {
+.front-page {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.685)),
+    url("images/ESports.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 48em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book_button {
+    color: rgb(255, 255, 255);
+    height: 50px;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    background-color: #96031A; /* Add your desired background color */
+    border-radius: 1px; /* Add rounded corners */
+    padding: 5px; /* Add padding for better appearance */
+    cursor: pointer; /* Add cursor style for interactive elements */
+    border: 2px solid #E44D26; /* Add a border with the first color */
+    box-shadow: 0 0 0 8px #1B1B1E, 0 0 0 10px #E44D26; /* Add a second color border using box-shadow */
+}
+
+#coaches {
+    background-color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    background-image: url("images/gaming_bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.coaches-title {
+    color: rgb(0, 0, 0);
+    font-size: 5em;
+    padding-left: 35px;
+    padding-top: 50px;
+    text-align: left;
+    margin: 0;
+}
+
+.coaches-p {
+    color: rgb(0, 0, 0);
+    font-size: 2.5em;
+    padding-top: 50px;
+    padding-bottom: 50px;;
+    text-align: center;
+    margin: 0;
+}
+
+#pro-players {
     display: flex;
     justify-content: space-around;
-    background-color: #555;
-    padding: 10px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.player {
+    position: relative;
+    overflow: hidden;
+    flex: 1 0 calc(30% - 20px); /* Adjust the width of each item based on your design */
+    max-width: calc(30% - 20px);
+}
+
+.player img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.player .description {
+    width: 70%;
+    height: auto;
+    margin: 10px 0 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B1B1E;
+    padding: 10px; /* Add padding as needed */
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
 }
 
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 8px 16px;
-    margin: 0px;
+    padding: 8px 3px;
+    margin: 10px;
 }
 
 .dropdown {
@@ -66,7 +167,7 @@ nav a {
 
 .dropdown-content a {
     display: block;
-    padding: 8px 16px;
+    margin: 0;
     color: #fff;
     text-decoration: none;
 }
@@ -77,35 +178,19 @@ nav a {
 
 nav a:hover,
 .dropdown-content a:hover {
-    background-color: #777;
+    background-color: #1b1b1ebe;
 }
 
 main {
     overflow: hidden;
 }
 
-.front-page {
-    position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.685)),
-    url("images/ESports.jpg");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-    height: 40em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.content {
-    background-color: #fff;
-    padding: 0px;
-}
-
 footer {
-    background-color: #333;
+    background-color: #1B1B1E;
     color: #fff;
-    padding: 10px;
+    padding: 1px;
     text-align: center;
+    position: fixed; /* Position the footer fixed at the bottom */
+    width: 100%;
+    bottom: 0;
 }
