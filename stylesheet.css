@@ -111,18 +111,18 @@ header {
     position: relative;
     overflow: hidden;
     flex: 1 0 calc(30% - 20px); /* Adjust the width of each item based on your design */
-    max-width: calc(30% - 20px);
+    max-width: calc(28% - 20px);
 }
 
 .player img {
-    width: 70%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     display: block;
 }
 
 .player .description {
-    width: 70%;
+    width: 50%;
     height: auto;
     margin: 10px 0 0;
     text-align: center;
