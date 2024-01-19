@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    text-align: left;
+    max-width: 15%;
+}
+
+.title_nav {
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    padding-left: -100px;
+    margin: 0;
+    padding: 0;
+}
+
+.titles {
+    color: white;
+    font-size: 3.6em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    max-width: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #555;
+    padding: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin: 0px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #555;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    width: 130px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav a:hover,
+.dropdown-content a:hover {
+    background-color: #777;
+}
+
+main {
+    overflow: hidden;
+}
+
+.front-page {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.685)),
+    url("images/ESports.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #fff;
+    padding: 0px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
