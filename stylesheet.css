@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,20 +17,9 @@ header {
     max-width: 15%;
 }
 
-.title_nav {
-    color: white;
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
-    text-align: left;
-    padding-left: -100px;
-    margin: 0;
-    padding: 0;
-}
-
 .titles {
     color: white;
-    font-size: 3.6em;
+    font-size: 3.125vw;
     font-family: 'Montserrat', sans-serif;
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -39,75 +28,114 @@ header {
 
 .front-page {
     position: relative;
-    background: linear-gradient(rgba(0, 0, 0, 0.815), rgba(0, 0, 0, 0.685)),
-    url("images/ESports.jpg");
+    width: 100%;
+    display: inline-block;
+    background-image: url("//dfgw1zqlrucay.cloudfront.net/assets/v3/backgrounds/home_header_assessments-c99f38f3821eb6943b8a129811e4da0e3ee011606e7e68c9e88bb4c0ccfce4cf.jpg");
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    min-height: 90vh;
+    color: #E6E6E6;
     text-align: center;
     height: 48em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 1;
+}
+
+.description1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0px;
+    padding-top: 150px;
+    padding-left: 500px;
+    text-align: center;
+    color: #323232;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    width: 50%;
 }
 
 .book_button {
-    color: rgb(255, 255, 255);
-    height: 50px;
-    font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
     text-align: center;
-    background-color: #96031A; /* Add your desired background color */
-    border-radius: 1px; /* Add rounded corners */
-    padding: 5px; /* Add padding for better appearance */
-    cursor: pointer; /* Add cursor style for interactive elements */
-    border: 2px solid #E44D26; /* Add a border with the first color */
-    box-shadow: 0 0 0 8px #1B1B1E, 0 0 0 10px #E44D26; /* Add a second color border using box-shadow */
+    background-color: #020202;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.08);
+    border-color: #36F35B;
+    border-width: 3px;
+    border-style: solid;
+    padding: 0 15px;
+    text-transform: uppercase;
+    color: #36F35B;
+    height: 70px;
+    width: 260px;
+    line-height: 64px;
+    transition: all 500ms cubic-bezier(0.585, -0.003, 0.25, 1);
+    transform: scaleY(0.9);
+}
+
+.book_button:hover {
+    background-color: #36F35B;
+    color: #020202;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 #coaches {
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Oswald', sans-serif;
+    background-color: #DCDCDC;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
     text-align: center;
     margin: 0;
     position: relative;
-    background-image: url("images/gaming_bg.jpg");
+    background-image: url(//dfgw1zqlrucay.cloudfront.net/assets/v3/backgrounds/bg_element_1-448961298ea8d4a829baf4e8f8030f2ace67c5c7db1471bb8be3e3bd76a136e8.png);
+    background-repeat: repeat;
+    background-position: 50% 50%;
     background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: auto;
 }
 
 .coaches-title {
     color: rgb(0, 0, 0);
-    font-size: 5em;
-    padding-left: 35px;
-    padding-top: 50px;
+    line-height: 86px;
+    font-size: 72px;
+    padding-left: 225px;
+    padding-top: 20px;
     text-align: left;
     margin: 0;
 }
 
-.coaches-p {
-    color: rgb(0, 0, 0);
-    font-size: 2.5em;
-    padding-top: 50px;
-    padding-bottom: 50px;;
-    text-align: center;
+h1 h2 h3 h4 h5 h6 {
+    display: block;
+    text-transform: uppercase;
     margin: 0;
+    color: #000000;
+}
+
+.coaches-p {
+    color: #323232;
+    line-height: 18px;
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+    max-width: 56%;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-right: 64px;
+    padding-left: 320px;
 }
 
 #pro-players {
-    padding: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    padding: 0 100px;
+    margin-left: 210px;
+    margin-right: 210px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     align-items: center;
+    object-fit: cover;
 }
 
 .player {
@@ -146,6 +174,46 @@ header {
     border: 2px solid;
 }
 
+.view-coaches {
+    font-size: 25px;
+    background-color: #323232;
+    border-color: #323232;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.08);
+    transition: all 500ms cubic-bezier(0.585, -0.003, 0.25, 1);
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 700px;
+    margin-right: 700px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    height: 45px;
+    width: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view-coaches:hover {
+    background-color: #36F35B;
+    color: #020202;
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+}
+
+.title_nav {
+    color: white;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    text-align: left;
+    padding-left: -100px;
+    margin: 0;
+    padding: 0;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -153,7 +221,8 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    background-color: #1B1B1E;
+    flex-direction: row;
+    background-color: #020202;
     padding: 10px; /* Add padding as needed */
     z-index: 1000; /* Ensure the navbar is on top of other elements */
 }
@@ -161,6 +230,8 @@ nav {
 nav a {
     color: #fff;
     text-decoration: none;
+    line-height: 22px;
+    font-size: 18px;
     padding: 8px 3px;
     margin: 10px;
 }
